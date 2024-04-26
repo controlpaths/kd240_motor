@@ -1,0 +1,163 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Apr 25 20:22:06 2024
+# Process ID: 10973
+# Current directory: /home/pablo/git/kd240_motor/script
+# Command line: vivado -mode tcl -source create_project.tcl
+# Log file: /home/pablo/git/kd240_motor/script/vivado.log
+# Journal file: /home/pablo/git/kd240_motor/script/vivado.jou
+# Running On: miercoles, OS: Linux, CPU Frequency: 400.000 MHz, CPU Physical cores: 12, Host memory: 16054 MB
+#-----------------------------------------------------------
+source create_project.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference angle_gen angle_gen_0
+create_bd_cell -type module -reference dq2abc dq2abc_0
+create_bd_cell -type module -reference modulator_pwm_gain modulator_pwm_gain_0
+create_bd_cell -type module -reference three_phase_modulator three_phase_modulator_0
+set_property location {0.5 -253 -237} [get_bd_cells angle_gen_0]
+connect_bd_net [get_bd_pins angle_gen_0/sin] [get_bd_pins dq2abc_0/sin]
+connect_bd_net [get_bd_pins angle_gen_0/cos] [get_bd_pins dq2abc_0/cos]
+set_property location {3 556 55} [get_bd_cells three_phase_modulator_0]
+set_property location {3 572 -152} [get_bd_cells modulator_pwm_gain_0]
+connect_bd_net [get_bd_pins modulator_pwm_gain_0/mod_a] [get_bd_pins dq2abc_0/a]
+connect_bd_net [get_bd_pins modulator_pwm_gain_0/mod_b] [get_bd_pins dq2abc_0/b]
+connect_bd_net [get_bd_pins modulator_pwm_gain_0/mod_c] [get_bd_pins dq2abc_0/c]
+set_property location {3.5 907 44} [get_bd_cells three_phase_modulator_0]
+connect_bd_net [get_bd_pins three_phase_modulator_0/mod_a] [get_bd_pins modulator_pwm_gain_0/mod_a_gained]
+connect_bd_net [get_bd_pins three_phase_modulator_0/mod_b] [get_bd_pins modulator_pwm_gain_0/mod_c_gained]
+delete_bd_objs [get_bd_nets modulator_pwm_gain_0_mod_c_gained]
+connect_bd_net [get_bd_pins three_phase_modulator_0/mod_b] [get_bd_pins modulator_pwm_gain_0/mod_b_gained]
+connect_bd_net [get_bd_pins three_phase_modulator_0/mod_c] [get_bd_pins modulator_pwm_gain_0/mod_c_gained]
+connect_bd_net [get_bd_pins three_phase_modulator_0/aclk] [get_bd_pins modulator_pwm_gain_0/aclk]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.5 zynq_ultra_ps_e_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1" }  [get_bd_cells zynq_ultra_ps_e_0]
+set_property CONFIG.PSU__FPGA_PL1_ENABLE {0} [get_bd_cells zynq_ultra_ps_e_0]
+connect_bd_net [get_bd_pins modulator_pwm_gain_0/aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins dq2abc_0/aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins angle_gen_0/aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins angle_gen_0/resetn] [get_bd_pins zynq_ultra_ps_e_0/pl_resetn0]
+connect_bd_net [get_bd_pins dq2abc_0/resetn] [get_bd_pins zynq_ultra_ps_e_0/pl_resetn0]
+connect_bd_net [get_bd_pins modulator_pwm_gain_0/resetn] [get_bd_pins zynq_ultra_ps_e_0/pl_resetn0]
+connect_bd_net [get_bd_pins three_phase_modulator_0/resetn] [get_bd_pins zynq_ultra_ps_e_0/pl_resetn0]
+regenerate_bd_layout
+set_property location {2 822 -119} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {0.5 452 104} [get_bd_cells angle_gen_0]
+set_property location {2 839 82} [get_bd_cells dq2abc_0]
+set_property location {2.5 1403 69} [get_bd_cells modulator_pwm_gain_0]
+set_property location {3.5 1817 51} [get_bd_cells three_phase_modulator_0]
+regenerate_bd_layout -routing
+delete_bd_objs [get_bd_cells zynq_ultra_ps_e_0]
+set_property board_part xilinx.com:kd240_som:part0:1.0 [current_project]
+set_property board_connections {som240_1_connector xilinx.com:kd240_carrier:som240_1_connector:1.0 som40_2_connector xilinx.com:kd240_carrier:som40_2_connector:1.0} [get_projects ../project/kd240_motor.xpr]
+set_property board_part xilinx.com:kd240_som:part0:1.0 [current_project]
+set_property board_connections {som240_1_connector xilinx.com:kd240_carrier:som240_1_connector:1.0 som40_2_connector xilinx.com:kd240_carrier:som40_2_connector:1.0} [get_projects ../project/kd240_motor.xpr]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+apply_board_connection -board_interface "som240_1_connector_motor_control_gpio" -ip_intf "axi_gpio_0/GPIO" -diagram "kd240_motor_bd" 
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO] [get_bd_cells axi_gpio_0]
+delete_bd_objs [get_bd_intf_ports som240_1_connector_motor_control_gpio]
+add_files -fileset constrs_1 -norecurse /home/pablo/git/kd240_motor/xdc/kd240_motor.xdc
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+endgroup
+set_property -dict [list CONFIG.PRIM_IN_FREQ.VALUE_SRC USER] [get_bd_cells clk_wiz_0]
+set_property -dict [list \
+  CONFIG.CLKIN1_JITTER_PS {400.0} \
+  CONFIG.CLKOUT1_JITTER {190.517} \
+  CONFIG.CLKOUT1_PHASE_ERROR {222.305} \
+  CONFIG.CLK_OUT1_PORT {clk100mhz} \
+  CONFIG.MMCM_CLKFBOUT_MULT_F {48.000} \
+  CONFIG.MMCM_CLKIN1_PERIOD {40.000} \
+  CONFIG.MMCM_CLKIN2_PERIOD {10.0} \
+  CONFIG.OPTIMIZE_CLOCKING_STRUCTURE_EN {true} \
+  CONFIG.PRIM_IN_FREQ {25} \
+  CONFIG.USE_RESET {false} \
+] [get_bd_cells clk_wiz_0]
+connect_bd_net [get_bd_pins clk_wiz_0/locked] [get_bd_pins angle_gen_0/resetn]
+connect_bd_net [get_bd_pins clk_wiz_0/clk100mhz] [get_bd_pins three_phase_modulator_0/aclk]
+startgroup
+create_bd_port -dir I -type clk -freq_hz 25000000 clk_in1
+connect_bd_net [get_bd_pins /clk_wiz_0/clk_in1] [get_bd_ports clk_in1]
+endgroup
+set_property name CLK_IN_gem [get_bd_ports clk_in1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:vio:3.0 vio_0
+endgroup
+set_property -dict [list \
+  CONFIG.C_NUM_PROBE_IN {3} \
+  CONFIG.C_NUM_PROBE_OUT {2} \
+] [get_bd_cells vio_0]
+connect_bd_net [get_bd_pins vio_0/probe_out0] [get_bd_pins modulator_pwm_gain_0/pwm_period]
+connect_bd_net [get_bd_pins three_phase_modulator_0/pwm_period] [get_bd_pins vio_0/probe_out0]
+startgroup
+set_property CONFIG.C_NUM_PROBE_OUT {3} [get_bd_cells vio_0]
+endgroup
+connect_bd_net [get_bd_pins vio_0/probe_out1] [get_bd_pins dq2abc_0/d_vector]
+connect_bd_net [get_bd_pins angle_gen_0/angle_prescaler] [get_bd_pins vio_0/probe_out2]
+connect_bd_net [get_bd_pins vio_0/clk] [get_bd_pins modulator_pwm_gain_0/mod_a_gained]
+delete_bd_objs [get_bd_nets modulator_pwm_gain_0_mod_a_gained]
+connect_bd_net [get_bd_ports CLK_IN_gem] [get_bd_pins vio_0/clk]
+disconnect_bd_net /clk_in1_1 [get_bd_pins vio_0/clk]
+connect_bd_net [get_bd_pins vio_0/clk] [get_bd_pins clk_wiz_0/clk100mhz]
+connect_bd_net [get_bd_pins vio_0/probe_in0] [get_bd_pins modulator_pwm_gain_0/mod_a_gained]
+connect_bd_net [get_bd_pins three_phase_modulator_0/mod_a] [get_bd_pins modulator_pwm_gain_0/mod_a_gained]
+connect_bd_net [get_bd_pins vio_0/probe_in1] [get_bd_pins modulator_pwm_gain_0/mod_b_gained]
+connect_bd_net [get_bd_pins vio_0/probe_in2] [get_bd_pins modulator_pwm_gain_0/mod_c_gained]
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins dq2abc_0/q_vector]
+startgroup
+set_property -dict [list \
+  CONFIG.CONST_VAL {0} \
+  CONFIG.CONST_WIDTH {16} \
+] [get_bd_cells xlconstant_0]
+endgroup
+regenerate_bd_layout
+startgroup
+set_property CONFIG.C_NUM_PROBE_OUT {4} [get_bd_cells vio_0]
+endgroup
+startgroup
+create_bd_port -dir O -from 0 -to 0 probe_out3
+connect_bd_net [get_bd_pins /vio_0/probe_out3] [get_bd_ports probe_out3]
+endgroup
+set_property name gate_drive_en [get_bd_ports probe_out3]
+startgroup
+create_bd_port -dir O pwm_a
+connect_bd_net [get_bd_pins /three_phase_modulator_0/pwm_a] [get_bd_ports pwm_a]
+endgroup
+startgroup
+create_bd_port -dir O pwm_b
+connect_bd_net [get_bd_pins /three_phase_modulator_0/pwm_b] [get_bd_ports pwm_b]
+endgroup
+startgroup
+create_bd_port -dir O pwm_c
+connect_bd_net [get_bd_pins /three_phase_modulator_0/pwm_c] [get_bd_ports pwm_c]
+endgroup
+regenerate_bd_layout
+set_property name gate_drive_phase_a [get_bd_ports pwm_a]
+set_property name gate_drive_phase_b [get_bd_ports pwm_b]
+set_property name gate_drive_phase_c [get_bd_ports pwm_c]
+save_bd_design
+make_wrapper -files [get_files /home/pablo/git/kd240_motor/project/kd240_motor.srcs/sources_1/bd/kd240_motor_bd/kd240_motor_bd.bd] -top
+add_files -norecurse /home/pablo/git/kd240_motor/project/kd240_motor.gen/sources_1/bd/kd240_motor_bd/hdl/kd240_motor_bd_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+startgroup
+set_property -dict [list \
+  CONFIG.C_PROBE_OUT0_WIDTH {16} \
+  CONFIG.C_PROBE_OUT1_WIDTH {16} \
+  CONFIG.C_PROBE_OUT2_WIDTH {12} \
+] [get_bd_cells vio_0]
+endgroup
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1

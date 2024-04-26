@@ -1,0 +1,1038 @@
+/*
+
+AMD Vivado v2023.2 (64-bit) [Major: 2023, Minor: 2]
+SW Build: 4029153 on Fri Oct 13 20:13:54 MDT 2023
+IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
+IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
+
+Process ID (PID): 10973
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Apr 25 20:22:29 CEST 2024
+Time zone: 	Central European Standard Time (Europe/Madrid)
+
+OS: Ubuntu
+OS Version: 6.5.0-28-generic
+OS Architecture: amd64
+Available processors (cores): 12
+LSB Release Description: Ubuntu 22.04.3 LTS
+
+Display: 0
+Screen size: 1920x1080
+Local screen bounds: x = 53, y = 27, width = 1867, height = 1053
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: false
+
+Java version: 	17.0.7 64-bit
+JavaFX version: 17.0.1
+Java home: 	/media/pablo/ext_ssd0/xilinx/Vivado/2023.2/tps/lnx64/jre17.0.7_7
+Java executable: 	/media/pablo/ext_ssd0/xilinx/Vivado/2023.2/tps/lnx64/jre17.0.7_7/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	pablo
+User home directory: /home/pablo
+User working directory: /home/pablo/git/kd240_motor/script
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /media/pablo/ext_ssd0/xilinx/Vivado
+HDI_APPROOT: /media/pablo/ext_ssd0/xilinx/Vivado/2023.2
+RDI_DATADIR: /media/pablo/ext_ssd0/xilinx/Vivado/2023.2/data
+RDI_BINDIR: /media/pablo/ext_ssd0/xilinx/Vivado/2023.2/bin
+
+Vivado preferences file: /home/pablo/.Xilinx/Vivado/2023.2/vivado.xml
+Vivado preferences directory: /home/pablo/.Xilinx/Vivado/2023.2/
+Vivado layouts directory: /home/pablo/.Xilinx/Vivado/2023.2/data/layouts
+PlanAhead jar file: 	/media/pablo/ext_ssd0/xilinx/Vivado/2023.2/lib/classes/planAhead.jar
+Vivado log file: 	/home/pablo/git/kd240_motor/script/vivado.log
+Vivado journal file: 	/home/pablo/git/kd240_motor/script/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-10973-miercoles
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+GNOME_SHELL_SESSION_MODE: ubuntu
+RDI_APPROOT: /media/pablo/ext_ssd0/xilinx/Vivado/2023.2
+RDI_BASEROOT: /media/pablo/ext_ssd0/xilinx/Vivado
+RDI_BINROOT: /media/pablo/ext_ssd0/xilinx/Vivado/2023.2/bin
+RDI_BUILD: yes
+RDI_DATADIR: /media/pablo/ext_ssd0/xilinx/Vivado/2023.2/data
+RDI_INSTALLROOT: /media/pablo/ext_ssd0/xilinx
+RDI_INSTALLVER: 2023.2
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 17.0.7_7
+RDI_LIBDIR: /media/pablo/ext_ssd0/xilinx/Vivado/2023.2/lib/lnx64.o/Ubuntu/22:/media/pablo/ext_ssd0/xilinx/Vivado/2023.2/lib/lnx64.o/Ubuntu:/media/pablo/ext_ssd0/xilinx/Vivado/2023.2/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /media/pablo/ext_ssd0/xilinx/Vitis/2023.2/bin:/media/pablo/ext_ssd0/xilinx/Vivado/2023.2/ids_lite/ISE/bin/lin64
+RDI_PROG: /media/pablo/ext_ssd0/xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/pablo/git/kd240_motor/script:miercoles_1714069325_10932
+RDI_SHARED_DATA: /media/pablo/ext_ssd0/xilinx/SharedData/2023.2/data
+RDI_TPS_ROOT: /media/pablo/ext_ssd0/xilinx/Vivado/2023.2/tps/lnx64
+RDI_USE_JDK17: True
+SHELL: /bin/bash
+XILINX: /media/pablo/ext_ssd0/xilinx/Vivado/2023.2/ids_lite/ISE
+XILINX_DSP: /media/pablo/ext_ssd0/xilinx/Vivado/2023.2/ids_lite/ISE
+XILINX_HLS: /media/pablo/ext_ssd0/xilinx/Vitis_HLS/2023.2
+XILINX_PLANAHEAD: /media/pablo/ext_ssd0/xilinx/Vivado/2023.2
+XILINX_SDK: /media/pablo/ext_ssd0/xilinx/Vitis/2023.2
+XILINX_VITIS: /media/pablo/ext_ssd0/xilinx/Vitis/2023.2
+XILINX_VIVADO: /media/pablo/ext_ssd0/xilinx/Vivado/2023.2
+XILINX_VIVADO_HLS: /media/pablo/ext_ssd0/xilinx/Vivado/2023.2
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,768 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: BOARD_CATALOG_MODIFIED
+// [GUI Memory]: 101 MB (+103845kb) [00:00:07]
+// [Engine Memory]: 1,610 MB (+1536465kb) [00:00:07]
+// [GUI Memory]: 109 MB (+2636kb) [00:00:07]
+// TclEventType: START_PROGRESS_DIALOG
+// Tcl Message: source create_project.tcl 
+// Tcl Message: # set projectDir ../project # set projectName kd240_motor # set bdName kd240_motor_bd # set srdDir ../src # set xdcDir ../xdc # set memDir ../memory_content # set bdDir ./bd # create_project -force $projectDir/$projectName.xpr 
+// Tcl Message: # start_gui 
+// Tcl Message: create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1318.309 ; gain = 0.023 ; free physical = 5132 ; free virtual = 13135 
+// Tcl Message: # set_property target_language Verilog [current_project] # set_property board_part xilinx.com:kd240_som:part0:1.0 [current_project] 
+// Tcl Message: INFO: [Project 1-152] Project part set to zynquplus (xck24-ubva530-2lv-c) 
+// Tcl Message: # add_file [glob $srdDir/*.v] # add_files [glob $memDir/cos.mem] # add_files [glob $memDir/sin.mem] # create_bd_design $bdName 
+// Tcl Message: Wrote  : </home/pablo/git/kd240_motor/project/kd240_motor.srcs/sources_1/bd/kd240_motor_bd/kd240_motor_bd.bd>  
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+// TclEventType: START_PROGRESS_DIALOG
+// TclEventType: STOP_PROGRESS_DIALOG
+// [Engine Memory]: 1,722 MB (+33504kb) [00:00:09]
+dismissDialog("Sourcing Tcl script 'create_project.tcl'"); // bq (Sourcing Tcl script 'create_project.tcl' Progress)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 73 MB. Current time: 4/25/24, 8:22:30 PM CEST
+// [Engine Memory]: 1,950 MB (+148956kb) [00:00:14]
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aa
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// [GUI Memory]: 133 MB (+19521kb) [00:00:22]
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ag (PAResourceItoN.MainMenuMgr_WINDOW, Window)
+selectMenuItem(PAResourceCommand.PACommandNames_FILESET_WINDOW, "Sources"); // ao (PAResourceCommand.PACommandNames_FILESET_WINDOW, view_filesets_menu)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ag (PAResourceItoN.MainMenuMgr_WINDOW, Window)
+// Run Command: PAResourceCommand.PACommandNames_FILESET_WINDOW
+// [GUI Memory]: 142 MB (+2258kb) [00:00:28]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 5, true); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IP_INTEGRATOR
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+// [GUI Memory]: 150 MB (+830kb) [00:00:29]
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 266, 112, 1122, 543, false, false, false, true, false); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_MODULE, "Add Module..."); // ao (PAResourceQtoS.SystemBuilderMenu_ADD_MODULE, Add Module...)
+selectList(PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST, "angle_gen (angle_gen.v)", 0); // cd (PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST)
+selectList(PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST, "angle_gen (angle_gen.v)", 0, false, false, false, false, true); // cd (PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST) - Double Click
+dismissDialog("Add Module"); // ca (dialog0)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: LOAD_FEATURE
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: create_bd_cell -type module -reference angle_gen angle_gen_0 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'resetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-4728] Bus Interface 'resetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'. INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'resetn'. 
+// Elapsed Time for: 'L.f': 38s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dq2abc (dq2abc.v)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dq2abc (dq2abc.v)]", 3, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,034 MB. GUI used memory: 75 MB. Current time: 4/25/24, 8:23:05 PM CEST
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 199, 68, 1122, 543, false, false, false, true, false); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// Elapsed time: 10 seconds
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_MODULE, "Add Module..."); // ao (PAResourceQtoS.SystemBuilderMenu_ADD_MODULE, Add Module...)
+// HOptionPane Warning: 'Module references are still updating. Please try again after Sources | Hierarchy view is up-to-date. (Add Module)'
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+// Elapsed Time for: 'L.f': 54s
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 190, 122, 1122, 543, false, false, false, true, false); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_IP, "Add IP..."); // ao (PAResourceQtoS.SystemBuilderMenu_ADD_IP, Add IP...)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 222, 226, 1122, 543, false, false, false, true, false); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // al (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // al (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_MODULE, "Add Module..."); // ao (PAResourceQtoS.SystemBuilderMenu_ADD_MODULE, Add Module...)
+selectList(PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST, "dq2abc (dq2abc.v)", 1); // cd (PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST)
+selectList(PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST, "dq2abc (dq2abc.v)", 1, false, false, false, false, true); // cd (PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST) - Double Click
+dismissDialog("Add Module"); // ca (dialog1)
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: create_bd_cell -type module -reference dq2abc dq2abc_0 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'resetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-4728] Bus Interface 'resetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'. INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'resetn'. 
+// Elapsed Time for: 'L.f': 01m:02s
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 259, 295, 1122, 543, false, false, false, true, false); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_MODULE, "Add Module..."); // ao (PAResourceQtoS.SystemBuilderMenu_ADD_MODULE, Add Module...)
+// HOptionPane Warning: 'Module references are still updating. Please try again after Sources | Hierarchy view is up-to-date. (Add Module)'
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+// Elapsed Time for: 'L.f': 01m:08s
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 269, 294, 1122, 543, false, false, false, true, false); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_MODULE, "Add Module..."); // ao (PAResourceQtoS.SystemBuilderMenu_ADD_MODULE, Add Module...)
+selectList(PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST, "modulator_pwm_gain (modulator_pwm_gain.v)", 2); // cd (PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST)
+selectList(PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST, "modulator_pwm_gain (modulator_pwm_gain.v)", 2, false, false, false, false, true); // cd (PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST) - Double Click
+dismissDialog("Add Module"); // ca (dialog2)
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: create_bd_cell -type module -reference modulator_pwm_gain modulator_pwm_gain_0 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'resetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-4728] Bus Interface 'resetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'. INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'resetn'. 
+// Elapsed Time for: 'L.f': 01m:14s
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 641, 328, 1122, 543, false, false, false, true, false); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Elapsed Time for: 'L.f': 01m:18s
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 628, 300, 1122, 543, false, false, false, true, false); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // al (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // al (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_MODULE, "Add Module..."); // ao (PAResourceQtoS.SystemBuilderMenu_ADD_MODULE, Add Module...)
+selectList(PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST, "three_phase_modulator (three_phase_modulator.v)", 3); // cd (PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST)
+selectList(PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST, "three_phase_modulator (three_phase_modulator.v)", 3, false, false, false, false, true); // cd (PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST) - Double Click
+dismissDialog("Add Module"); // ca (dialog3)
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: create_bd_cell -type module -reference three_phase_modulator three_phase_modulator_0 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'resetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-4728] Bus Interface 'resetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'. INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'resetn'. 
+// Elapsed Time for: 'L.f': 01m:24s
+// Elapsed Time for: 'L.f': 01m:26s
+// Tcl Command: 'set_property location {0.5 -253 -237} [get_bd_cells angle_gen_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {0.5 -253 -237} [get_bd_cells angle_gen_0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins angle_gen_0/sin] [get_bd_pins dq2abc_0/sin] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins angle_gen_0/cos] [get_bd_pins dq2abc_0/cos] 
+// Tcl Command: 'set_property location {3 556 55} [get_bd_cells three_phase_modulator_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3 556 55} [get_bd_cells three_phase_modulator_0] 
+// Tcl Command: 'set_property location {3 572 -152} [get_bd_cells modulator_pwm_gain_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3 572 -152} [get_bd_cells modulator_pwm_gain_0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins modulator_pwm_gain_0/mod_a] [get_bd_pins dq2abc_0/a] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins modulator_pwm_gain_0/mod_b] [get_bd_pins dq2abc_0/b] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins modulator_pwm_gain_0/mod_c] [get_bd_pins dq2abc_0/c] 
+// Tcl Command: 'set_property location {3.5 907 44} [get_bd_cells three_phase_modulator_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3.5 907 44} [get_bd_cells three_phase_modulator_0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins three_phase_modulator_0/mod_a] [get_bd_pins modulator_pwm_gain_0/mod_a_gained] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins three_phase_modulator_0/mod_b] [get_bd_pins modulator_pwm_gain_0/mod_c_gained] 
+// Elapsed time: 30 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /modulator_pwm_gain_0_mod_c_gained]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets modulator_pwm_gain_0_mod_c_gained] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins three_phase_modulator_0/mod_b] [get_bd_pins modulator_pwm_gain_0/mod_b_gained] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins three_phase_modulator_0/mod_c] [get_bd_pins modulator_pwm_gain_0/mod_c_gained] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins three_phase_modulator_0/aclk] [get_bd_pins modulator_pwm_gain_0/aclk] 
+// Elapsed time: 16 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "zynq"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Zynq UltraScale+ MPSoC", 0, "Zynq UltraScale+ MPSoC", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Zynq UltraScale+ MPSoC", 0); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Zynq UltraScale+ MPSoC", 0, "Zynq UltraScale+ MPSoC", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.5 zynq_ultra_ps_e_0 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bq (Add IP Progress)
+// Elapsed Time for: 'L.f': 02m:28s
+// Elapsed Time for: 'L.f': 02m:30s
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_BLOCK_AUTOMATION, "Run Block Automation"); // g (PAResourceQtoS.RSBApplyAutomationBar_RUN_BLOCK_AUTOMATION)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Run Block Automation"); // E (dialog4)
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1" }  [get_bd_cells zynq_ultra_ps_e_0] 
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change  
+dismissDialog("Run Block Automation"); // bq (Run Block Automation Progress)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /zynq_ultra_ps_e_0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /zynq_ultra_ps_e_0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// WARNING: HEventQueue.dispatchEvent() is taking  2527 ms.
+// Tcl Message: INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change  
+// HMemoryUtils.trashcanNow. Engine heap size: 2,090 MB. GUI used memory: 105 MB. Current time: 4/25/24, 8:25:11 PM CEST
+dismissDialog("Re-customize IP"); // C (Re-customize IP Progress)
+selectButton("PS-PL Configuration", "PS-PL Configuration"); // j (PS-PL Configuration)
+selectButton("Clock Configuration", "Clock Configuration"); // j (Clock Configuration)
+selectTab(PAResourceOtoP.PSSPanelClockingPage_TABBED_PANE, PAResourceOtoP.PSSPanelClockingPage_OUTPUT_CLOCKS, "Output Clocks", 1); // g (PAResourceOtoP.PSSPanelClockingPage_TABBED_PANE)
+expandTreeTable(PAResourceOtoP.PSSTreeTablePanelBuilder_ADV_CLK_TREE, "Low Power Domain Clocks ; Low Power Domain Clocks ; Low Power Domain Clocks ; Low Power Domain Clocks ; Low Power Domain Clocks ; Low Power Domain Clocks ; Low Power Domain Clocks ; Low Power Domain Clocks", 0); // Y (PAResourceOtoP.PSSTreeTablePanelBuilder_ADV_CLK_TREE)
+expandTreeTable(PAResourceOtoP.PSSTreeTablePanelBuilder_ADV_CLK_TREE, "PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks", 3); // Y (PAResourceOtoP.PSSTreeTablePanelBuilder_ADV_CLK_TREE)
+selectTreeTable(PAResourceOtoP.PSSTreeTablePanelBuilder_ADV_CLK_TREE, "PL1 ; IOPLL ;  ; 100 ; 10 ; 1 ; 99.999001 ; 100", 5, "PL1", 0, false); // Y (PAResourceOtoP.PSSTreeTablePanelBuilder_ADV_CLK_TREE)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Re-customize IP"); // m (dialog5)
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// [Engine Memory]: 2,088 MB (+41858kb) [00:03:10]
+// TclEventType: RSB_PROPERTY_CHANGE
+// [GUI Memory]: 159 MB (+1423kb) [00:03:10]
+// TclEventType: RSB_PROPERTY_CHANGE
+// [GUI Memory]: 167 MB (+40kb) [00:03:10]
+// TclEventType: RSB_PROPERTY_CHANGE
+// [GUI Memory]: 176 MB (+668kb) [00:03:10]
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: set_property CONFIG.PSU__FPGA_PL1_ENABLE {0} [get_bd_cells zynq_ultra_ps_e_0] 
+// Tcl Message: INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change  
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// [GUI Memory]: 187 MB (+2307kb) [00:03:11]
+dismissDialog("Customize IP"); // bq (Customize IP Progress)
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins modulator_pwm_gain_0/aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins dq2abc_0/aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins angle_gen_0/aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins angle_gen_0/resetn] [get_bd_pins zynq_ultra_ps_e_0/pl_resetn0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins dq2abc_0/resetn] [get_bd_pins zynq_ultra_ps_e_0/pl_resetn0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins modulator_pwm_gain_0/resetn] [get_bd_pins zynq_ultra_ps_e_0/pl_resetn0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins three_phase_modulator_0/resetn] [get_bd_pins zynq_ultra_ps_e_0/pl_resetn0] 
+// Elapsed time: 37 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Tcl Command: 'set_property location {2 822 -119} [get_bd_cells zynq_ultra_ps_e_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 822 -119} [get_bd_cells zynq_ultra_ps_e_0] 
+// Tcl Command: 'set_property location {0.5 452 104} [get_bd_cells angle_gen_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {0.5 452 104} [get_bd_cells angle_gen_0] 
+// Tcl Command: 'set_property location {2 839 82} [get_bd_cells dq2abc_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 839 82} [get_bd_cells dq2abc_0] 
+// Tcl Command: 'set_property location {2.5 1403 69} [get_bd_cells modulator_pwm_gain_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2.5 1403 69} [get_bd_cells modulator_pwm_gain_0] 
+// Tcl Command: 'set_property location {3.5 1817 51} [get_bd_cells three_phase_modulator_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3.5 1817 51} [get_bd_cells three_phase_modulator_0] 
+// Elapsed time: 18 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_OPTIMIZE_ROUTING, "System_RSB_OPTIMIZE_LAYOUT"); // B (PAResourceQtoS.SystemBuilderView_OPTIMIZE_ROUTING, System_RSB_OPTIMIZE_LAYOUT)
+// Tcl Command: 'regenerate_bd_layout -routing'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_ROUTE_LAYOUT
+// Tcl Message: regenerate_bd_layout -routing 
+// Elapsed time: 384 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /zynq_ultra_ps_e_0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: delete_bd_objs [get_bd_cells zynq_ultra_ps_e_0] 
+// Elapsed Time for: 'L.f': 10m:26s
+// Elapsed Time for: 'L.f': 10m:28s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,132 MB. GUI used memory: 110 MB. Current time: 4/25/24, 8:32:55 PM CEST
+// Elapsed time: 34 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl (Dont Echo) Command: 'rdi::info_commands {device::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {debug::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {*}'
+// WARNING: HEventQueue.dispatchEvent() is taking  1389 ms.
+selectMoreButton(PAResourceQtoS.SettingsProjectGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT, (String) null); // r (PAResourceQtoS.SettingsProjectGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT)
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Kria KD240 Drives Starter Kit SOM ; Kria KD240 Drives Starter Kit SOM ; xilinx.com ; 1.0 ; Kria KD240 Drives Starter Kit SOM ; 530 ; Rev_A01 ; 81 ; 70560 ; 141120 ; 216 ; 0 ; 360 ; 3604 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 3 ;  ; 0 ;  ;  ; 0 ;  ;  ; 0 ; 85 ; 85 ; C ; 0.698 ; 0.720 ; 0.742", 6, "Kria KD240 Drives Starter Kit SOM", 0, false); // l (PAResourceAtoD.BoardChooser_BOARD_TABLE)
+selectLinkButton((HResource) null, "Connections"); // j
+// [GUI Memory]: 339 MB (+149349kb) [00:11:11]
+// [Engine Memory]: 2,197 MB (+5381kb) [00:11:11]
+selectTable(PAResourceOtoP.PartUtils_ADD_CHANGE_AND_REMOVE_BOARD_CONNECTIONS, "Connector 1 on K24 SOM (SOM240_1) ; ", 0, (String) null, 1); // o (PAResourceOtoP.PartUtils_ADD_CHANGE_AND_REMOVE_BOARD_CONNECTIONS)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,198 MB. GUI used memory: 141 MB. Current time: 4/25/24, 8:33:30 PM CEST
+selectTable(PAResourceOtoP.PartUtils_ADD_CHANGE_AND_REMOVE_BOARD_CONNECTIONS, "Connector 2 on K24 SOM (SOM40_2) ; ", 1, (String) null, 1); // o (PAResourceOtoP.PartUtils_ADD_CHANGE_AND_REMOVE_BOARD_CONNECTIONS)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Manage Board Connections"); // l.a (dialog7)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Select Device"); // c (dialog8)
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (RDIResource.BaseDialog_APPLY)
+// TclEventType: RSB_BITABEN_BOARDDATA_REFRESH
+// TclEventType: BOARD_MODIFIED
+// Tcl Message: set_property board_part xilinx.com:kd240_som:part0:1.0 [current_project] 
+// TclEventType: RSB_BITABEN_BOARDDATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BOARD_MODIFIED
+// Tcl Message: set_property board_connections {som240_1_connector xilinx.com:kd240_carrier:som240_1_connector:1.0 som40_2_connector xilinx.com:kd240_carrier:som40_2_connector:1.0} [get_projects ../project/kd240_motor.xpr] 
+dismissDialog("Change Settings"); // bq (Change Settings Progress)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1457, 178); // cD (RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+// TclEventType: RSB_BITABEN_BOARDDATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BOARD_MODIFIED
+// Tcl Message: set_property board_part xilinx.com:kd240_som:part0:1.0 [current_project] 
+// TclEventType: RSB_BITABEN_BOARDDATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BOARD_MODIFIED
+// Tcl Message: set_property board_connections {som240_1_connector xilinx.com:kd240_carrier:som240_1_connector:1.0 som40_2_connector xilinx.com:kd240_carrier:som40_2_connector:1.0} [get_projects ../project/kd240_motor.xpr] 
+dismissDialog("Change Settings"); // bq (Change Settings Progress)
+dismissDialog("Settings"); // d (dialog6)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1450, 173); // cD (RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR)
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // cD (RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,295 MB. GUI used memory: 128 MB. Current time: 4/25/24, 8:34:00 PM CEST
+// Elapsed time: 39 seconds
+selectTree(PAResourceAtoD.BoardTreePanel_BOARD_TREE_PANEL, "[Kria KD240 Drives Starter Kit SOM, General Purpose Input or Output, Motor_control_gpio (som240_1_connector)]", 10, false); // af (PAResourceAtoD.BoardTreePanel_BOARD_TREE_PANEL)
+// Run Command: PAResourceCommand.PACommandNames_CONNECT_PREFERRED_BOARD_INTERFACE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0 
+// Tcl Message: apply_board_connection -board_interface "som240_1_connector_motor_control_gpio" -ip_intf "axi_gpio_0/GPIO" -diagram "kd240_motor_bd"  
+// Tcl Message: INFO: [BoardInterface 100-3] current_bd_design kd240_motor_bd INFO: [BoardInterface 100-10] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells -quiet /axi_gpio_0] INFO: [BoardInterface 100-12] set_property CONFIG.GPIO_BOARD_INTERFACE som240_1_connector_motor_control_gpio [get_bd_cells -quiet /axi_gpio_0] INFO: [BoardInterface 100-108] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 som240_1_connector_motor_control_gpio INFO: [BoardInterface 100-109] connect_bd_intf_net /som240_1_connector_motor_control_gpio /axi_gpio_0/GPIO 
+// Tcl Message: endgroup 
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_ports /som240_1_connector_motor_control_gpio]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Elapsed Time for: 'L.f': 12m:14s
+// TclEventType: RSB_CANVAS_LOCATION
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // g (RDIResource.PropertiesView_TABBED_PANE)
+// Elapsed Time for: 'L.f': 12m:16s
+// TclEventType: RSB_CANVAS_LOCATION
+selectTreeTable(PAResourceTtoZ.TclObjectTreeTable_TREETABLE, "VLNV ; xilinx.com:interface:gpio_rtl:1.0", 5, "xilinx.com:interface:gpio_rtl:1.0", 1, false); // k (PAResourceTtoZ.TclObjectTreeTable_TREETABLE)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_gpio_0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO] [get_bd_cells axi_gpio_0] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_ports /som240_1_connector_motor_control_gpio]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// TclEventType: RSB_CANVAS_LOCATION
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_intf_ports som240_1_connector_motor_control_gpio] 
+// Elapsed Time for: 'L.f': 12m:26s
+// Elapsed Time for: 'L.f': 12m:28s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,160 MB. GUI used memory: 129 MB. Current time: 4/25/24, 9:04:00 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,160 MB. GUI used memory: 113 MB. Current time: 4/25/24, 9:34:00 PM CEST
+// Elapsed time: 3806 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 7, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ao (PAResourceCommand.PACommandNames_ADD_SOURCES, add_sources_menu)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES)
+setFileChooser("/home/pablo/git/kd240_motor/xdc/kd240_motor.xdc");
+selectButton("FINISH", "Finish"); // JButton (FINISH)
+// 'f' command handler elapsed time: 9 seconds
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Add Sources"); // c (dialog9)
+// Tcl Message: add_files -fileset constrs_1 -norecurse /home/pablo/git/kd240_motor/xdc/kd240_motor.xdc 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "cloc"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard", 3, "Clocking Wizard", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard", 3); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard", 3, "Clocking Wizard", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 
+// Tcl Message: INFO: [Device 21-403] Loading part xck24-ubva530-2LV-c 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,608 MB. GUI used memory: 114 MB. Current time: 4/25/24, 9:38:45 PM CEST
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// [Engine Memory]: 3,214 MB (+950315kb) [01:16:37]
+// Tcl Message: create_bd_cell: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 9248.555 ; gain = 1040.020 ; free physical = 2172 ; free virtual = 10651 
+// Tcl Message: endgroup 
+// Elapsed time: 10 seconds
+dismissDialog("Add IP"); // bq (Add IP Progress)
+// Elapsed Time for: 'L.f': 01h:16m:30s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /clk_wiz_0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /clk_wiz_0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+dismissDialog("Re-customize IP"); // C (Re-customize IP Progress)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 1); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectCheckBox((HResource) null, "Optimize Clocking Structure", true); // f: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,298 MB. GUI used memory: 129 MB. Current time: 4/25/24, 9:39:05 PM CEST
+// Elapsed time: 10 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Board", 0); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 1); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectButton(PAResourceTtoZ.XPG_TextField_VALUE_OF_SPECIFIED_PARAMETER, (String) null); // v (PAResourceTtoZ.XPG_TextField_VALUE_OF_SPECIFIED_PARAMETER): TRUE
+setText("PRIM IN FREQ", "25"); // v (PRIM IN FREQ)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 2); // cI (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+selectCheckBox((HResource) null, "reset", false); // f: FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,315 MB. GUI used memory: 130 MB. Current time: 4/25/24, 9:39:30 PM CEST
+setText("CLK OUT1 PORT", "clk100mhz", true); // v (CLK OUT1 PORT)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+// Tcl Command: 'set_property -dict [list CONFIG.PRIM_IN_FREQ.VALUE_SRC USER] [get_bd_cells clk_wiz_0]'
+dismissDialog("Re-customize IP"); // m (dialog11)
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property -dict [list CONFIG.PRIM_IN_FREQ.VALUE_SRC USER] [get_bd_cells clk_wiz_0] 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property -dict [list \   CONFIG.CLKIN1_JITTER_PS {400.0} \   CONFIG.CLKOUT1_JITTER {190.517} \   CONFIG.CLKOUT1_PHASE_ERROR {222.305} \   CONFIG.CLK_OUT1_PORT {clk100mhz} \   CONFIG.MMCM_CLKFBOUT_MULT_F {48.000} \   CONFIG.MMCM_CLKIN1_PERIOD {40.000} \   CONFIG.MMCM_CLKIN2_PERIOD {10.0} \   CONFIG.OPTIMIZE_CLOCKING_STRUCTURE_EN {true} \   CONFIG.PRIM_IN_FREQ {25} \   CONFIG.USE_RESET {false} \ ] [get_bd_cells clk_wiz_0] 
+dismissDialog("Customize IP"); // bq (Customize IP Progress)
+// Elapsed Time for: 'L.f': 01h:17m:18s
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins clk_wiz_0/locked] [get_bd_pins angle_gen_0/resetn] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins clk_wiz_0/clk100mhz] [get_bd_pins three_phase_modulator_0/aclk] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /clk_wiz_0/clk_in1]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+applyEnter(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "clk_in1"); // Q (PAResourceAtoD.CreateRSBPortDialog_PORT_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create Port"); // aO (clk_in1)
+// Tcl Message: startgroup 
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: create_bd_port -dir I -type clk -freq_hz 25000000 clk_in1 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins /clk_wiz_0/clk_in1] [get_bd_ports clk_in1] 
+// Tcl Message: endgroup 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 7); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, kd240_motor.xdc]", 9, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, kd240_motor.xdc]", 9, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("kd240_motor.xdc", 322, 426); // ad (kd240_motor.xdc)
+selectCodeEditor("kd240_motor.xdc", 322, 426, false, false, false, false, true); // ad (kd240_motor.xdc) - Double Click
+typeControlKey((HResource) null, "kd240_motor.xdc", 'c'); // ad (kd240_motor.xdc)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /clk_in1]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,332 MB. GUI used memory: 126 MB. Current time: 4/25/24, 9:40:05 PM CEST
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "CLK_IN_gem", true); // Q (PAResourceQtoS.RSBExternalPortPropPanels_NAME)
+// Tcl Command: 'set_property name CLK_IN_gem [get_bd_ports clk_in1]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name CLK_IN_gem [get_bd_ports clk_in1] 
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "vio"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "VIO (Virtual Input/Output)", 0, "VIO (Virtual Input/Output)", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "VIO (Virtual Input/Output)", 0, "VIO (Virtual Input/Output)", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "VIO (Virtual Input/Output)", 0); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "VIO (Virtual Input/Output)", 0, "VIO (Virtual Input/Output)", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:vio:3.0 vio_0 
+// Tcl Message: endgroup 
+// [Engine Memory]: 3,382 MB (+8066kb) [01:18:00]
+// Elapsed Time for: 'L.f': 01h:17m:52s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /vio_0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /vio_0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// HMemoryUtils.trashcanNow. Engine heap size: 3,384 MB. GUI used memory: 130 MB. Current time: 4/25/24, 9:40:20 PM CEST
+// Elapsed time: 14 seconds
+setText("Input  Probe  Count", "3"); // v (Input  Probe  Count)
+setText("Output Probe Count", "2"); // v (Output Probe Count)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "PROBE_IN Ports(0..2)", 1); // bb (PAResourceEtoH.HACGCTabbedPane_TABBED_PANE)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "PROBE_OUT Ports(0..1)", 2); // bb (PAResourceEtoH.HACGCTabbedPane_TABBED_PANE)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "General Options", 0); // bb (PAResourceEtoH.HACGCTabbedPane_TABBED_PANE)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Re-customize IP"); // m (dialog12)
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property -dict [list \   CONFIG.C_NUM_PROBE_IN {3} \   CONFIG.C_NUM_PROBE_OUT {2} \ ] [get_bd_cells vio_0] 
+// Elapsed Time for: 'L.f': 01h:18m:22s
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins vio_0/probe_out0] [get_bd_pins modulator_pwm_gain_0/pwm_period] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /three_phase_modulator_0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /zynq_ultra_ps_e_0_pl_resetn0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /zynq_ultra_ps_e_0_pl_resetn0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /three_phase_modulator_0/pwm_period]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins three_phase_modulator_0/pwm_period] [get_bd_pins vio_0/probe_out0] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /vio_0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /vio_0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+setText("Output Probe Count", "3", true); // v (Output Probe Count)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Re-customize IP"); // m (dialog13)
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property CONFIG.C_NUM_PROBE_OUT {3} [get_bd_cells vio_0] 
+// Tcl Message: endgroup 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins vio_0/probe_out1] [get_bd_pins dq2abc_0/d_vector] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins angle_gen_0/angle_prescaler] [get_bd_pins vio_0/probe_out2] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins vio_0/clk] [get_bd_pins modulator_pwm_gain_0/mod_a_gained] 
+// Elapsed time: 19 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /modulator_pwm_gain_0_mod_a_gained]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets modulator_pwm_gain_0_mod_a_gained] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_ports CLK_IN_gem] [get_bd_pins vio_0/clk] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /clk_in1_1]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /vio_0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 125, 58, 1122, 543, false, false, false, true, false); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /vio_0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /vio_0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /vio_0/clk]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 117, 56, 1122, 543, false, false, false, true, false); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /vio_0/clk]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // al (PAResourceQtoS.SelectMenu_HIGHLIGHT, Highlight)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // al (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+selectMenuItem(PAResourceCommand.PACommandNames_DISCONNECT_RSB_PIN, "Disconnect Pin"); // ao (PAResourceCommand.PACommandNames_DISCONNECT_RSB_PIN, disconnect_rsb_pin_menu)
+// Run Command: PAResourceCommand.PACommandNames_DISCONNECT_RSB_PIN
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: disconnect_bd_net /clk_in1_1 [get_bd_pins vio_0/clk] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins vio_0/clk] [get_bd_pins clk_wiz_0/clk100mhz] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins vio_0/probe_in0] [get_bd_pins modulator_pwm_gain_0/mod_a_gained] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins three_phase_modulator_0/mod_a] [get_bd_pins modulator_pwm_gain_0/mod_a_gained] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins vio_0/probe_in1] [get_bd_pins modulator_pwm_gain_0/mod_b_gained] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins vio_0/probe_in2] [get_bd_pins modulator_pwm_gain_0/mod_c_gained] 
+// Elapsed time: 20 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "constant"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+applyEnter(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 
+// Tcl Message: endgroup 
+// Elapsed Time for: 'L.f': 01h:19m:50s
+// Elapsed Time for: 'L.f': 01h:19m:52s
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins dq2abc_0/q_vector] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /xlconstant_0/dout]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /xlconstant_0/dout]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /xlconstant_0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /xlconstant_0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// HMemoryUtils.trashcanNow. Engine heap size: 3,395 MB. GUI used memory: 135 MB. Current time: 4/25/24, 9:42:20 PM CEST
+setText("Const Width", "16"); // v (Const Width)
+setText("Const Val", "0", true); // v (Const Val)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Re-customize IP"); // m (dialog14)
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list \   CONFIG.CONST_VAL {0} \   CONFIG.CONST_WIDTH {16} \ ] [get_bd_cells xlconstant_0] 
+// Tcl Message: endgroup 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /vio_0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /vio_0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+setText("Output Probe Count", "4", true); // v (Output Probe Count)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Re-customize IP"); // m (dialog15)
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property CONFIG.C_NUM_PROBE_OUT {4} [get_bd_cells vio_0] 
+// Tcl Message: endgroup 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /vio_0/probe_out2]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /vio_0/probe_out3]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+applyEnter(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "probe_out3"); // Q (PAResourceAtoD.CreateRSBPortDialog_PORT_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create Port"); // aO (probe_out3)
+// Tcl Message: startgroup 
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: create_bd_port -dir O -from 0 -to 0 probe_out3 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins /vio_0/probe_out3] [get_bd_ports probe_out3] 
+// Tcl Message: endgroup 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "kd240_motor.xdc", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("kd240_motor.xdc", 391, 99); // ad (kd240_motor.xdc)
+typeControlKey((HResource) null, "kd240_motor.xdc", 'c'); // ad (kd240_motor.xdc)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /probe_out3]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "gate_drive_en[0]", true); // Q (PAResourceQtoS.RSBExternalPortPropPanels_NAME)
+// HOptionPane Error: 'The name 'gate_drive_en[0]' contains illegal characters. It must only contain alphanumeric characters and '_' (Vivado)'
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "gate_drive_en", true); // Q (PAResourceQtoS.RSBExternalPortPropPanels_NAME)
+// Tcl Command: 'set_property name gate_drive_en [get_bd_ports probe_out3]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name gate_drive_en [get_bd_ports probe_out3] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /three_phase_modulator_0/pwm_a]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+applyEnter(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "pwm_a"); // Q (PAResourceAtoD.CreateRSBPortDialog_PORT_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create Port"); // aO (pwm_a)
+// Tcl Message: startgroup 
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: create_bd_port -dir O pwm_a 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins /three_phase_modulator_0/pwm_a] [get_bd_ports pwm_a] 
+// Tcl Message: endgroup 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /three_phase_modulator_0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /three_phase_modulator_0/pwm_b]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+applyEnter(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "pwm_b"); // Q (PAResourceAtoD.CreateRSBPortDialog_PORT_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create Port"); // aO (pwm_b)
+// Tcl Message: startgroup 
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: create_bd_port -dir O pwm_b 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins /three_phase_modulator_0/pwm_b] [get_bd_ports pwm_b] 
+// Tcl Message: endgroup 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /three_phase_modulator_0/pwm_c]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+applyEnter(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "pwm_c"); // Q (PAResourceAtoD.CreateRSBPortDialog_PORT_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create Port"); // aO (pwm_c)
+// Tcl Message: startgroup 
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: create_bd_port -dir O pwm_c 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins /three_phase_modulator_0/pwm_c] [get_bd_ports pwm_c] 
+// Tcl Message: endgroup 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, System_regenerate_rsb_layout)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, kd240_motor.xdc]", 9, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, kd240_motor.xdc]", 9, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("kd240_motor.xdc", 351, 177); // ad (kd240_motor.xdc)
+selectCodeEditor("kd240_motor.xdc", 351, 177, false, false, false, false, true); // ad (kd240_motor.xdc) - Double Click
+typeControlKey((HResource) null, "kd240_motor.xdc", 'c'); // ad (kd240_motor.xdc)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /pwm_a]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "gate_drive_phase_a", true); // Q (PAResourceQtoS.RSBExternalPortPropPanels_NAME)
+// Tcl Command: 'set_property name gate_drive_phase_a [get_bd_ports pwm_a]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name gate_drive_phase_a [get_bd_ports pwm_a] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /pwm_b]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "gate_drive_phase_b", true); // Q (PAResourceQtoS.RSBExternalPortPropPanels_NAME)
+// Tcl Command: 'set_property name gate_drive_phase_b [get_bd_ports pwm_b]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name gate_drive_phase_b [get_bd_ports pwm_b] 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /pwm_c]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "gate_drive_phase_c", true); // Q (PAResourceQtoS.RSBExternalPortPropPanels_NAME)
+// Tcl Command: 'set_property name gate_drive_phase_c [get_bd_ports pwm_c]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name gate_drive_phase_c [get_bd_ports pwm_c] 
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, kd240_motor_bd (kd240_motor_bd.bd)]", 1, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag (PAResourceItoN.MainMenuMgr_EDIT, Edit)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag (PAResourceItoN.MainMenuMgr_EDIT, Edit)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+selectButton(PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "save_rsb_design"); // B (PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, save_rsb_design)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: save_bd_design 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/pablo/git/kd240_motor/project/kd240_motor.srcs/sources_1/bd/kd240_motor_bd/kd240_motor_bd.bd>  Wrote  : </home/pablo/git/kd240_motor/project/kd240_motor.srcs/sources_1/bd/kd240_motor_bd/ui/bd_1287eed6.ui>  
+dismissDialog("Save Design"); // bq (Save Design Progress)
+// Elapsed Time for: 'L.f': 01h:22m:05s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,481 MB. GUI used memory: 137 MB. Current time: 4/25/24, 9:44:30 PM CEST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, kd240_motor_bd (kd240_motor_bd.bd)]", 1, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // al (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // ao (PAResourceCommand.PACommandNames_CREATE_TOP_HDL, create_top_hdl_menu)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create HDL Wrapper"); // a (dialog16)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: make_wrapper -files [get_files /home/pablo/git/kd240_motor/project/kd240_motor.srcs/sources_1/bd/kd240_motor_bd/kd240_motor_bd.bd] -top 
+// Tcl Message: INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate 
+// Tcl Message: Wrote  : </home/pablo/git/kd240_motor/project/kd240_motor.srcs/sources_1/bd/kd240_motor_bd/kd240_motor_bd.bd>  
+// Tcl Message: Verilog Output written to : /home/pablo/git/kd240_motor/project/kd240_motor.gen/sources_1/bd/kd240_motor_bd/synth/kd240_motor_bd.v 
+// Tcl Message: Verilog Output written to : /home/pablo/git/kd240_motor/project/kd240_motor.gen/sources_1/bd/kd240_motor_bd/sim/kd240_motor_bd.v Verilog Output written to : /home/pablo/git/kd240_motor/project/kd240_motor.gen/sources_1/bd/kd240_motor_bd/hdl/kd240_motor_bd_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse /home/pablo/git/kd240_motor/project/kd240_motor.gen/sources_1/bd/kd240_motor_bd/hdl/kd240_motor_bd_wrapper.v 
+dismissDialog("Create HDL Wrapper"); // bq (Create HDL Wrapper Progress)
+// Elapsed Time for: 'L.f': 01h:22m:10s
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // a (dialog17)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:22m:18s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 01h:22m:20s
+// Elapsed Time for: 'L.f': 01h:22m:22s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// [Engine Memory]: 3,560 MB (+9649kb) [01:22:32]
+// Elapsed Time for: 'L.f': 01h:22m:24s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:22m:26s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 11 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /vio_0_probe_out0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Elapsed Time for: 'L.f': 01h:22m:28s
+// Elapsed Time for: 'L.f': 01h:22m:30s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /vio_0_probe_out1]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /vio_0_probe_out2]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /vio_0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /vio_0]"); // fS (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "PROBE_IN Ports(0..2)", 1); // bb (PAResourceEtoH.HACGCTabbedPane_TABBED_PANE)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "PROBE_OUT Ports(0..3)", 2); // bb (PAResourceEtoH.HACGCTabbedPane_TABBED_PANE)
+setText("PROBE OUT0 WIDTH", "16"); // v (PROBE OUT0 WIDTH)
+setText("PROBE OUT1 WIDTH", "16"); // v (PROBE OUT1 WIDTH)
+setText("PROBE OUT2 WIDTH", "12"); // v (PROBE OUT2 WIDTH)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Re-customize IP"); // m (dialog18)
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list \   CONFIG.C_PROBE_OUT0_WIDTH {16} \   CONFIG.C_PROBE_OUT1_WIDTH {16} \   CONFIG.C_PROBE_OUT2_WIDTH {12} \ ] [get_bd_cells vio_0] 
+// Tcl Message: endgroup 
+selectButton(PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "save_rsb_design"); // B (PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, save_rsb_design)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/pablo/git/kd240_motor/project/kd240_motor.srcs/sources_1/bd/kd240_motor_bd/kd240_motor_bd.bd>  Wrote  : </home/pablo/git/kd240_motor/project/kd240_motor.srcs/sources_1/bd/kd240_motor_bd/ui/bd_1287eed6.ui>  
+// Elapsed Time for: 'L.f': 01h:22m:52s
+// Elapsed Time for: 'L.f': 01h:22m:54s
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (RDIResource.BaseDialog_YES)
+dismissDialog("No Implementation Results Available"); // u (dialog19)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+// 'cu' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cx (dialog20)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate 
+// Tcl Message: Wrote  : </home/pablo/git/kd240_motor/project/kd240_motor.srcs/sources_1/bd/kd240_motor_bd/kd240_motor_bd.bd>  Verilog Output written to : /home/pablo/git/kd240_motor/project/kd240_motor.gen/sources_1/bd/kd240_motor_bd/synth/kd240_motor_bd.v Verilog Output written to : /home/pablo/git/kd240_motor/project/kd240_motor.gen/sources_1/bd/kd240_motor_bd/sim/kd240_motor_bd.v Verilog Output written to : /home/pablo/git/kd240_motor/project/kd240_motor.gen/sources_1/bd/kd240_motor_bd/hdl/kd240_motor_bd_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block angle_gen_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block dq2abc_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block modulator_pwm_gain_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block three_phase_modulator_0 . 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 . 
+// Tcl Message: Exporting to file /home/pablo/git/kd240_motor/project/kd240_motor.gen/sources_1/bd/kd240_motor_bd/hw_handoff/kd240_motor_bd.hwh Generated Hardware Definition File /home/pablo/git/kd240_motor/project/kd240_motor.gen/sources_1/bd/kd240_motor_bd/synth/kd240_motor_bd.hwdef 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // bq (Generate Bitstream Progress)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,647 MB. GUI used memory: 143 MB. Current time: 4/25/24, 9:45:50 PM CEST
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed Time for: 'L.f': 01h:23m:26s
+// Elapsed Time for: 'L.f': 01h:23m:28s
+// WARNING: HEventQueue.dispatchEvent() is taking  1139 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3338 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2057 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4762 ms. Increasing delay to 14286 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1576 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 2117 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5536 ms. Increasing delay to 3000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 327ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1130 ms.

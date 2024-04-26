@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Apr 25 20:19:01 2024
+# Process ID: 10506
+# Current directory: /home/pablo/git/kd240_motor/script
+# Command line: vivado -mode tcl -source create_project.tcl
+# Log file: /home/pablo/git/kd240_motor/script/vivado.log
+# Journal file: /home/pablo/git/kd240_motor/script/vivado.jou
+# Running On: miercoles, OS: Linux, CPU Frequency: 4033.357 MHz, CPU Physical cores: 12, Host memory: 16054 MB
+#-----------------------------------------------------------
+source create_project.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse /home/pablo/git/kd240_motor/src/dq2abc.v

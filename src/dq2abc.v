@@ -11,7 +11,8 @@
 
 module dq2abc #(
 	parameter inout_width = 16,
-	parameter inout_decimal_width = 15
+	parameter inout_decimal_width = 15,
+	parameter sqrt3_2 = 16'd28377
 )(
 	input wire aclk, 
 	input wire resetn,
@@ -30,7 +31,7 @@ module dq2abc #(
 	output wire signed [inout_width-1:0] c /* modulator signals */
 );
 
-	localparam sqrt3_2 = 0.8660254038 * 2**(inout_decimal_width); /* sqrt(3)/2 constant for alpha/beta to abc transformation*/
+	// localparam sqrt3_2 = 0.8660254038 * 2**(inout_decimal_width); /* sqrt(3)/2 constant for alpha/beta to abc transformation*/
 
 	wire signed [(inout_width*2)-1:0] d_cos_2width; /* d * cos */
 	wire signed [(inout_width*2)-1:0] d_sin_2width; /* d * sin */
@@ -74,7 +75,7 @@ module dq2abc #(
 	assign beta_sqrt3_2 = $signed(beta_sqrt3_2_2width >>> inout_decimal_width);
 
 	assign a = alpha;
-	assign b = -$signed(alpha>>>2) + beta_sqrt3_2;
-	assign c = -$signed(alpha>>>2) - beta_sqrt3_2;
+	assign b = -$signed(alpha>>>1) + beta_sqrt3_2;
+	assign c = -$signed(alpha>>>1) - beta_sqrt3_2;
 
 endmodule
